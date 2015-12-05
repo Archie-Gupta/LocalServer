@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
-  resources :loggedins
+  
 
-  resources :names
+  resources :device
 
-  resources :users
-  match "/registerUser" => "users#registerUser" , :via => :post, :as=> :register_user
-  match "chat" => "users#chat", :via => :post , :as => :chat
-  match "/loginUser" => "loggedins#create", :via => :post , :as => :login
-  match "/listUser" => "loggedins#listUsers", :via => :post , :as => :listUsers
-  match "/deleteUser/:id" => "loggedins#delete_user", :via => :get , :as => :deleteUser
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

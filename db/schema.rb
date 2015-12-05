@@ -11,28 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103131114) do
+ActiveRecord::Schema.define(version: 20141027170945) do
 
-  create_table "loggedins", force: true do |t|
-    t.integer  "uid"
-    t.string   "username"
-    t.string   "interests"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "names", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "username"
-    t.string   "interests"
-    t.string   "emailId"
-    t.string   "password"
-    t.string   "gcm_id"
+  
+  create_table "device", force: true do |t|
+    t.string "mac_address"
+    t.string "type"
+    t.string "hotspot_to_connect"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
