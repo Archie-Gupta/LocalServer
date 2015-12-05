@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Macaddress:</strong>
+  <%= @device.Macaddress %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @device.type %>
+</p>
+
+<p>
+  <strong>Hotspot_to_connect:</strong>
+  <%= @device.hotspot_to_connect %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
